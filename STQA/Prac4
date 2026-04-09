@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <math.h>
+
+void getInputs(float *, float *, float *);
+float doCalcs(float, float, float);
+void ShowIt(float);
+
+int main()
+{
+float base, power;
+float Scaler;
+
+```
+getInputs(&base, &power, &Scaler);
+ShowIt(doCalcs(base, power, Scaler));
+
+return 0;
+```
+
+}
+
+void getInputs(float *base, float *power, float *S)
+{
+printf("\nInput the radix for calculation => ");
+scanf("%f", base);
+
+```
+printf("\nInput power => ");
+scanf("%f", power);
+
+printf("\nScale value => ");
+scanf("%f", S);
+```
+
+}
+
+float doCalcs(float base, float power, float Scale)
+{
+float total;
+
+```
+if (Scale != 1)
+    total = pow(base, power) * Scale;
+else
+    total = pow(base, power);
+
+return total;
+```
+
+}
+
+void ShowIt(float Val)
+{
+printf("The scaled power value is %f W.\n", Val);
+}
