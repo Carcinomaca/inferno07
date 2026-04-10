@@ -1,0 +1,15 @@
+def bubbleSort(arr): 
+    X=1 
+    n=len(arr) 
+    for i in range(n): 
+        swapped = False 
+        for j in range(0,n-i-1): 
+            if arr[j] > arr[j+1]: 
+                arr[j],arr[j+1]=arr[j+1],arr[j] 
+                print('PASS',X,'=',arr) 
+                X+=1 
+                swapped = True 
+        if not swapped: 
+                break 
+arr=[67,25,26,45,15,10] 
+bubbleSort(arr)
