@@ -12,8 +12,8 @@ print(x)
 def push(stack, item): 
   stack.append(item) 
   print("pushed item: " + item) 
-push(stack, str('Ganesh')) 
-push(stack, str('Sahu')) 
+push(stack, str('Hardik')) 
+push(stack, str('Rohit')) 
 print(stack) 
 # Removing an element from the stack 
 def pop(stack): 
